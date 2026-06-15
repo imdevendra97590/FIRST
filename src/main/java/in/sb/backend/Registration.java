@@ -15,7 +15,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class Registration extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    protected void service(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         String username = request.getParameter("username");
@@ -36,7 +36,7 @@ public class Registration extends HttpServlet {
 
             int i = ps.executeUpdate();
             if (i > 0) {
-                response.getWriter().println("Registration successful!");
+                response.getWriter().println("Registration Happy to  successful!");
             } else {
                 response.getWriter().println("Error during registration.");
             }
