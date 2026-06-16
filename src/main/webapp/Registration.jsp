@@ -4,7 +4,7 @@
     <title>Customer Registration</title>
 </head>
 <body>
-    <h2>Google Register</h2>
+    <h2>Google update  Register</h2>
     <form action="RegisterServlet" method="post">
         Username: <input type="text" name="username" required><br>
         Password: <input type="password" name="password" required><br>
